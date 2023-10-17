@@ -1,11 +1,11 @@
 import { createContext, useContext, useState } from "react";
-import tenis from 'json/tenis.json'
+import tenis from 'json/tenis.json';
 
 export const FotosProdutosContext = createContext();
 FotosProdutosContext.displayName = 'Fotos Produtos';
 
 export const FotosProdutosProvider = ({ children }) => {
-  const [listaTenis, setListaTenis] = useState(tenis)
+  const [listaTenis, setListaTenis] = useState(tenis);
   const [fotoAtual, setFotoAtual] = useState([]);
   const [modal, setModal] = useState(null);
 
