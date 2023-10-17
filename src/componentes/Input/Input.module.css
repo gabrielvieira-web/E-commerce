@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cor-fundo-caixa);
+  color:  var(--cor-preto);
+  font-weight: 700;
+  font-size:   1.1rem;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.container .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  height: 100%;
+  background-color: transparent;
+}
+
+.container .botao:nth-child(1) {
+  padding-left: 16px;
+}
+
+.container .botao:nth-child(3) {
+  padding-right: 16px;
+}
+
+.container .botao:disabled{
+  cursor: default;
+}
+
+.container .botao:disabled > img{
+  opacity: .4;
+}
+
+.container .botao img {
+    width: 12px;   
+}

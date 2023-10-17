@@ -1,0 +1,11 @@
+.secaoProduto {
+  display: flex;
+  gap: 7rem;
+  padding: 5rem 3rem; 
+}
+
+@media screen and (max-width: 768px) {
+  .secaoProduto {
+    flex-direction: column;
+  }
+}

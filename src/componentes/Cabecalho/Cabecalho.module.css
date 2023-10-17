@@ -1,0 +1,75 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--cor-fundo-caixa);
+}
+
+.containerNavegacao {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menuHamburguer {
+  display: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+.containerCarrinho {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem 0;
+}
+
+.carrinhoBotao {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.carrinhoCompra {
+  width: 25px;
+}
+
+.caixaQuantidadeProduto {
+  position: relative;
+  top: -12px;
+  left: 33px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  width: 100%;
+  text-align: center;
+  padding: 1px 7px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.fotoUsuario {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.fotoUsuario:hover {
+  border: 2px solid var(--cor-primaria);
+}
+
+.carrinhoBotao, .fotoUsuario {
+  cursor: pointer;
+}
+
+.carrinhoBotao:disabled {
+  cursor: default;
+  opacity: .5;
+}
+
+@media screen and (max-width: 768px) {
+  .menuHamburguer {
+    display: block;
+  }
+}

@@ -1,0 +1,26 @@
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  border: none;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size:  1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width:  100%;
+  transition: ease-in-out .5s;
+  box-shadow: 0px 10px 23px 2px var(--cor-primaria-shadow);
+}
+
+.botao:hover {
+  background-color: var(--cor-primaria-hover);
+  box-shadow: 0px 10px 23px 2px var(--cor-primaria-hover-shadow);
+}
+
+.botao img {
+  width: 20px; 
+}
