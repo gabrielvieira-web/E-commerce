@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 import { createContext, useContext, useState } from "react";
-import tenis from 'json/tenis.json'
+import tenis from 'json/tenis.json';
+=======
+import { createContext, useContext, useEffect, useState } from "react";
+>>>>>>> 3e83233a264fd2a25ca38ddeee18e88ff1104a3d
 
 export const FotosProdutosContext = createContext();
 FotosProdutosContext.displayName = 'Fotos Produtos';
 
 export const FotosProdutosProvider = ({ children }) => {
-  const [listaTenis, setListaTenis] = useState(tenis)
+<<<<<<< HEAD
+  const [listaTenis, setListaTenis] = useState(tenis);
+=======
+  const [listaTenis, setListaTenis] = useState([]);
+>>>>>>> 3e83233a264fd2a25ca38ddeee18e88ff1104a3d
   const [fotoAtual, setFotoAtual] = useState([]);
   const [modal, setModal] = useState(null);
 
@@ -34,6 +42,14 @@ export const useFotosProdutos = () => {
     modal, 
     setModal
   } = useContext(FotosProdutosContext);
+
+  useEffect(() => {
+    fetch("https://my-json-server.typicode.com/gabrielvieira-web/E-commerce-api/produtos")
+      .then(dados => dados.json())
+      .then(dados => {
+        setListaTenis(dados)
+      })
+  }, []);
 
   function atualizaLista(id) {
     const listaAtualizada = listaTenis.map(item => {
