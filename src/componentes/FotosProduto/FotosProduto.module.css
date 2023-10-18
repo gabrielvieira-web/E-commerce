@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -33,9 +34,21 @@
 
 .itemAtivo {
   border: 2px solid var(--cor-primaria);
+  background-color: var(--cor-branco);
 }
 
 .imgAtivo {
-  opacity: .6;
+  opacity: .5;
 }
 
+@media screen and (max-width: 768px) {
+
+  .fotoAtual {
+    border-radius: 0;
+    height: 90%;
+  }
+
+  .listaDeFotos {
+    display: none;
+  }
+}

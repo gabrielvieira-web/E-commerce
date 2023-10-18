@@ -13,8 +13,10 @@ function Cabecalho() {
   return (
     <header className={styles.cabecalho}>
       <div className={styles.containerNavegacao}>
-        <img src={menuHamburguer} alt="foto do menu do site" className={styles.menuHamburguer}/>
-        <img src={logo} alt="foto da logo sneakers" className={styles.logo}/>
+        <div className={styles.containerMenu}>
+          <img src={menuHamburguer} alt="foto do menu do site" className={styles.menuHamburguer}/>
+          <img src={logo} alt="foto da logo sneakers" className={styles.logo}/>
+        </div>
         <LinksNavegacao />
       </div>
       <div className={styles.containerCarrinho}>
