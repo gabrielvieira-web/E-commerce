@@ -5,7 +5,6 @@ function FotosProdutos() {
   const {fotoAtual, listaTenis, trocaFotoCards, setModal} = useFotosProdutos();
 
   return (
-    listaTenis.length !== 0 && 
     <div className={styles.container}>
       <img 
         src={fotoAtual.length === 0 ? listaTenis[0].fotoProduto : fotoAtual.fotoProduto} 
