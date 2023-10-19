@@ -40,3 +40,21 @@
 .container .botao img {
     width: 12px;   
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .container .botao {
+    padding: 20px 0;
+  }
+
+  .container .botao:nth-child(1) {
+    padding-left: 30px;
+  }
+  
+  .container .botao:nth-child(3) {
+    padding-right: 30px;
+  }
+}
