@@ -3,7 +3,6 @@ import styles from './Cabecalho.module.css';
 import carrinhoCompra from 'assets/icones/icon-cart-cinza.svg';
 import fotoUsuario from './foto-perfil.png';
 import { useCarrinhoCompras } from 'contextos/CarrinhoCompras';
-import CarrinhoProduto from 'componentes/CarrinhoProduto';
 import menuHamburguer from './icon-menu.svg';
 import logo from './logo.svg';
 
@@ -33,7 +32,6 @@ function Cabecalho() {
           </span>
           <img src={carrinhoCompra} alt="icone do carrinho de compra" className={styles.carrinhoCompra} />
         </button>
-        <CarrinhoProduto />
         <img src={fotoUsuario} alt="foto do usuário Gabriel Vieira" className={styles.fotoUsuario}/>
       </div>
     </header>

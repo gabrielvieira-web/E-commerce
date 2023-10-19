@@ -46,6 +46,7 @@
   .fotoAtual {
     border-radius: 0;
     height: 90%;
+    cursor: default;
   }
 
   .listaDeFotos {
