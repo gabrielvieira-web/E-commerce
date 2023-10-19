@@ -59,3 +59,11 @@
   margin-top: 1.3rem;
   grid-column: 1/4;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    top: 6rem;
+    width: 95%;
+    left: .6rem;
+  }
+}
