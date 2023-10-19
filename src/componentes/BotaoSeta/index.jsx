@@ -21,8 +21,7 @@ const BotaoEstilizado = styled.button`
 
   @media screen and (max-width: 768px) {
     display: ${props => props.$botaoSetaHome ? 'block' : 'none'};
-    top: 50%;
-    left: ${props => props.$botaoEsquerdo ? '5%' : '85%'};
+    left: ${props => props.$botaoEsquerdo ? '4%' : '85%'};
     box-shadow: 3px 5px 15px 2px #00000036;
     width: 45px;
     height: 45px;
