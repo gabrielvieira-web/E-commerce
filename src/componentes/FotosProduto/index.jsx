@@ -21,7 +21,7 @@ function FotosProdutos() {
         src={fotoAtual.length === 0 ? listaTenis[0].fotoProduto : fotoAtual.fotoProduto}
         alt="imagem de tênis"
         className={styles.fotoAtual}
-        onClick={() => setModal(true)}
+        onClick={() => window.innerWidth > 768 ? setModal(true) : ''}
       />
       <BotaoSeta botaoSetaHome={true}>
         <img src={setaDireita} alt="icone de seta a direita" />
