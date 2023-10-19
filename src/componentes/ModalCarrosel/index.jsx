@@ -1,9 +1,9 @@
 import FotosProdutos from "componentes/FotosProduto";
 import styles from "./ModalCarrosel.module.css";
 import { useFotosProdutos } from "contextos/FotosProdutos";
-import close from "./icon-close.svg";
-import setaEsquerda from "./icon-previous.svg";
-import setaDireita from "./icon-next.svg";
+import close from "assets/icones/icon-close.svg";
+import setaEsquerda from "assets/icones/icon-previous.svg";
+import setaDireita from "assets/icones/icon-next.svg";
 import BotaoSeta from "componentes/BotaoSeta";
 
 function ModalCarrosel() {

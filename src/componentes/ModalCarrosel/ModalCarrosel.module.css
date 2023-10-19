@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.dialog div > img {
+  cursor: default;
+}
+
 .dialog ul{
   justify-content: center;
   width: 80%;
