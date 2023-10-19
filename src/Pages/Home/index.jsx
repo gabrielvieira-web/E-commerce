@@ -4,6 +4,7 @@ import DescricaoProduto from 'componentes/DescricaoProduto';
 import DialogCarrosel from 'componentes/ModalCarrosel';
 import FotosProdutos from "componentes/FotosProduto";
 import CarrinhoProduto from 'componentes/CarrinhoProduto';
+import MenuLateral from 'componentes/MenuLateral';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <FotosProdutos />
         <DescricaoProduto />
       </section>
+      <MenuLateral />
       <CarrinhoProduto />
       <DialogCarrosel />
     </>

@@ -1,0 +1,53 @@
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(190deg, var(--cor-linear-gradiente));
+  width: 80%;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.close {
+  width: 25px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.container nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container nav a {
+  width: 100%;
+  background-color: var(--cor-primaria-hover);
+  color: var(--cor-secundaria);
+  padding: 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: ease .3s;
+}
+
+.container nav a:hover {
+  border-bottom: none;
+  transform: translateX(6px);
+  text-decoration: underline;
+}
+
+.container nav a:active {
+  background-color: var(--cor-primaria);
+}
+
+
+
+/* .navegacao a {
+  color: var(--cor-texto);
+  align-self: end;
+  text-decoration: none;
+  padding-bottom: 38px;
+}
+
+.navegacao a:hover {
+  border-bottom: 2px solid var(--cor-primaria);
+} */

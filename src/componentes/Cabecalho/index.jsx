@@ -3,8 +3,7 @@ import styles from './Cabecalho.module.css';
 import carrinhoCompra from 'assets/icones/icon-cart-cinza.svg';
 import fotoUsuario from './foto-perfil.png';
 import { useCarrinhoCompras } from 'contextos/CarrinhoCompras';
-import menuHamburguer from './icon-menu.svg';
-import logo from './logo.svg';
+import ImagensMenu from 'componentes/ImagensMenu';
 
 function Cabecalho() {
   const {quantidadeProduto, ativaCarrinho} = useCarrinhoCompras();
@@ -12,10 +11,7 @@ function Cabecalho() {
   return (
     <header className={styles.cabecalho}>
       <div className={styles.containerNavegacao}>
-        <div className={styles.containerMenu}>
-          <img src={menuHamburguer} alt="foto do menu do site" className={styles.menuHamburguer}/>
-          <img src={logo} alt="foto da logo sneakers" className={styles.logo}/>
-        </div>
+        <ImagensMenu />
         <LinksNavegacao />
       </div>
       <div className={styles.containerCarrinho}>
